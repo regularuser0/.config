@@ -3,10 +3,11 @@
 rm /home/user/.config/script/theme/*
 
 wallpaper_path="$(find ~/images/selected_walls/ -type f | shuf -n 1)"
+#wallpaper_path="/home/user/images/p0.png"
 
 echo $wallpaper_path > /home/user/.config/script/theme/last_wallpaper_path
-#magick $wallpaper_path -quality 10% ~/.config/script/theme/current.png # lower the quality for rofi latency
-magick $wallpaper_path -define png:extent=1MB /home/user/.config/script/theme/current.jpg
+
+magick $wallpaper_path -define jpg:extent=1MB /home/user/.config/script/theme/current.jpg
 
 swww img --transition-type wave "$wallpaper_path"
 
