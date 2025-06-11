@@ -1,0 +1,140 @@
+@import "wallust/colors-waybar.css";
+
+* {
+  font-family:"Hack Nerd Font", monospace;
+  font-size: 11px;
+  font-weight: bold;
+  min-height: 0;
+}
+
+#waybar {
+  background-color: transparent;
+  color: @color9;
+}
+
+#workspaces {
+  border-radius: 0.5rem;
+  background-color: @background;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  color: @color5;
+  border-radius: 0.5rem;
+  padding: 0rem 0.65rem;
+}
+
+#workspaces button.active {
+  color: @color7;
+}
+
+#workspaces button:hover {
+  box-shadow: none; 
+  text-shadow: none; 
+  background: none; 
+  transition: none; 
+  border: none;
+}
+
+#bluetooth,
+#temperature,
+#network,
+#workspaces,
+#cpu,
+#disk,
+#memory,
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+    margin-top:4px;
+} 
+
+#bluetooth,
+#custom-music,
+#cpu,
+#disk,
+#network,
+#tray,
+#backlight,
+#temperature,
+#clock,
+#memory,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+  background-color: @background;
+  padding: 0.5rem 0.5rem;
+}
+
+#clock {
+  color: @color7;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  margin-right: 1rem;
+}
+
+#battery {
+  color: @color6;
+}
+
+#battery.warning:not(.charging) {
+  color: @orange;
+}
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @color6;
+}
+
+#backlight, #battery {
+  border-radius: 0;
+}
+#bluetooth {
+    color : @color4;
+}
+
+#pulseaudio {
+  color: @color3;
+  border-radius: 0.5rem 0px 0px 0.5rem;
+  margin-left: 1rem;
+}
+
+#custom-music {
+  color: @teal;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+#tray {
+  margin-right: 10px;
+  border-radius: 0.5rem;
+}
+
+#cpu {
+  color: @color7;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#disk {
+  color: @color5;
+}
+
+#memory {
+  color: @color6;
+}
+
+#network {
+   color: @color5;
+}
+
+#temperature {
+  color: @color4;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+}

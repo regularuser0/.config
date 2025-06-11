@@ -1,0 +1,9 @@
+[Unit]
+Description= changes theme
+    
+[Service]
+Type=oneshot
+ExecStart=hyprland
+
+[Install]
+WantedBy=default.target

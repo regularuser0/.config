@@ -1,0 +1,15 @@
+[global]
+    frame_width = 2
+    separator_color= frame
+
+    layer = top
+    
+    corner_radius = 2
+    origin = top-right
+    offset = (10,10)
+    progress_bar = true
+
+    frame_color = "{{color4}}"
+    foreground = "{{foreground}}"
+    background = "{{background}}"
+    highlight = "{{color3}}"

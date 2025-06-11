@@ -1,0 +1,53 @@
+@import url("colors.css");
+
+/* @font-face { */
+/*     font-family: "Cozette"; */
+/*     src: url("assets/CozetteVector.ttf") format('truetype'); */
+/* } */
+
+body{
+    font-family: CozetteVector;
+    background: url(../script/theme/current.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height:100vh;
+    align-items: center;
+    display:flex;
+}
+.window{
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 95%;
+}
+.box{
+    border: solid var(--color3) 3px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--background);
+    margin: 50px 6%;
+    color: var(--foreground);
+
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+h1{
+    color: var(--color4);
+    margin: 10px 2px 29px 2px;
+    font-size: 35px;
+}
+a{
+    margin: 5px 20px;
+    text-decoration: none;
+    color: var(--color5);
+    font-size: 25px;
+}
+
+h2{
+    color: var(--color6);
+    margin: 0;    
+}

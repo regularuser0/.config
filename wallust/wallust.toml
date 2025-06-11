@@ -1,0 +1,42 @@
+# full - resized - wal - thumb -  fastresize - kmeans
+backend = "fastresize"
+
+# lab - labmixed - lch - lchmixed
+color_space = "lch"
+
+# dark - dark16 - darkcomp - darkcomp16
+# light - light16 - lightcomp - lightcomp16
+# harddark - harddark16 - harddarkcomp - harddarkcomp16
+# softdark - softdark16 - softdarkcomp - softdarkcomp16
+# softlight - softlight16 - softlightcomp - softlightcomp16
+
+palette = "dark"
+
+check_contrast = true
+
+saturation = 40
+
+#alpha = 90
+
+[templates]
+
+cava.template = 'colors-cava'
+cava.target = '~/.config/cava/config'
+
+hypr.template = 'wallust-hyprland.conf'
+hypr.target = '~/.config/hypr/wallust/colors-hyprland.conf'
+
+rofi.template = 'colors-rofi.rasi'
+rofi.target = '~/.config/rofi/theme.rasi'
+
+dunst.template = 'dunstrc'
+dunst.target = '~/.config/dunst/dunstrc'
+
+waybar.template = 'colors-waybar.css'
+waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
+
+kitty.template = 'colors-kitty.conf'
+kitty.target = '~/.config/kitty/wallust/colors-kitty.conf'
+
+startpage.template = 'startpage.css'
+startpage.target = '~/.config/startpage/colors.css'
