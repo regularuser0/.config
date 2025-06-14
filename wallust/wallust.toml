@@ -23,6 +23,9 @@ saturation = 40
 cava.template = 'colors-cava'
 cava.target = '~/.config/cava/config'
 
+ghostty.template = 'colors-ghostty'
+ghostty.target = '~/.config/ghostty/colors-wallust'
+
 hypr.template = 'wallust-hyprland.conf'
 hypr.target = '~/.config/hypr/wallust/colors-hyprland.conf'
 
