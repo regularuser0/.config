@@ -12,4 +12,5 @@ alias tree="exa --icons -T"
 
 set -gx EDITOR emacs
 
+starship init fish | source
 #source ~/.local/share/icons-in-terminal/icons.fish

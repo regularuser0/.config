@@ -1,8 +1,8 @@
 @import "wallust/colors-waybar.css";
 
 * {
-  font-family:"Hack Nerd Font", monospace;
-  font-size: 11px;
+  font-family:"CozetteVector", monospace;
+  font-size: 13px;
   font-weight: bold;
   min-height: 0;
 }
