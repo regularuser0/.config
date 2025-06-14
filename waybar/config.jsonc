@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top",
 
-    "modules-left": ["hyprland/workspaces","custom/music"],
+    "modules-left": ["hyprland/workspaces","custom/music","custom/wall"],
     "modules-center": ["cpu","memory","disk","temperature"],
     "modules-right": ["pulseaudio","bluetooth","network","backlight", "battery", "clock","tray"],
 
@@ -59,6 +59,14 @@
         "on-click": "playerctl play-pause & mpc toggle",
         "max-length": 50
     },
+    "custom/wall": {
+    "format": "󰸉  {} wallpapers",
+        "escape": true,
+    	"interval": 100,
+        "tooltip": false,
+	"on-click": "~/.config/script/theme.sh",		
+    	"exec": "ls -1 ~/images/selected_walls | wc -l", 
+    },
     "clock": {
 	"format": "  {:%A | %B %d %Y | %R}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -86,7 +94,6 @@
     },
     "backlight": {
         "device": "intel_backlight",
-	"on-click": "~/.config/script/theme.sh",	
         "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
     },

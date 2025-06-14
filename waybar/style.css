@@ -44,6 +44,7 @@
 #disk,
 #memory,
 #custom-music,
+#custom-wall,
 #tray,
 #backlight,
 #clock,
@@ -52,8 +53,9 @@
 #custom-lock,
 #custom-power {
     margin-top:4px;
-} 
+}
 
+#custom-wall,
 #bluetooth,
 #custom-music,
 #cpu,
@@ -107,7 +109,12 @@
 }
 
 #custom-music {
-  color: @teal;
+  color: @color3;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+#custom-wall {
+  color: @color4;
   border-radius: 0.5rem;
   margin-left: 1rem;
 }
