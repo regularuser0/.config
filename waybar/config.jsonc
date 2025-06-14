@@ -28,7 +28,6 @@
 	"format-critical": "  {temperatureC}°C ",
 	"format": " {temperatureC}°C"
 },
-
 "disk": {
 	"interval": 30,
 	"path": "/home",

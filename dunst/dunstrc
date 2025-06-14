@@ -1,0 +1,15 @@
+[global]
+    frame_width = 2
+    separator_color= frame
+
+    layer = top
+    
+    corner_radius = 2
+    origin = top-right
+    offset = (10,10)
+    progress_bar = true
+
+    frame_color = "#FD9327"
+    foreground = "#FEFAD7"
+    background = "#222723"
+    highlight = "#E8616A"
