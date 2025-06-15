@@ -65,7 +65,7 @@
     	"interval": 100,
         "tooltip": false,
 	"on-click": "~/.config/script/theme.sh",		
-    	"exec": "ls -1 ~/images/selected_walls | wc -l", 
+    	"exec": "ls -1 ~/sav/output_wall/ | wc -l", 
     },
     "clock": {
 	"format": "󰃰 {:%A  %B %d %Y  %R}",
