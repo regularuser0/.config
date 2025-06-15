@@ -3,15 +3,16 @@ font-family = CozetteVector
 gtk-single-instance = true
 
 window-padding-x = 10
-window-padding-y = 8
+window-padding-y = 7
 
 confirm-close-surface = false
 
 app-notifications = false
 
+resize-overlay = never
 
-
-background-opacity = 0.9
+background-blur = true
+background-opacity = 0.8
 
 config-file = ~/.config/ghostty/colors-wallust
 

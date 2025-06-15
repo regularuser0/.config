@@ -1,12 +1,12 @@
 
 * {
-   font:                        "JetBrains Mono Nerd Font 10";
+   font:                        "CozetteVector 12";
 
-    background:			 #000103;
-    background-alt:              #000103;
-    foreground:                  #EEE6E3;
-    selected:                    #3B6679;
-    active:                      #3B6679;
-    urgent:                      #465381;
+    background:			 #1E161A;
+    background-alt:              #1E161A;
+    foreground:                  #FCF8F4;
+    selected:                    #924E66;
+    active:                      #924E66;
+    urgent:                      #FE0074;
 
 }

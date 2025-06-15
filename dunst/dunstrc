@@ -9,7 +9,7 @@
     offset = (10,10)
     progress_bar = true
 
-    frame_color = "#AE4D6C"
-    foreground = "#EEE6E3"
-    background = "#000103"
-    highlight = "#465381"
+    frame_color = "#4D9276"
+    foreground = "#FCF8F4"
+    background = "#1E161A"
+    highlight = "#FE0074"
