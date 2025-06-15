@@ -1,10 +1,10 @@
 @import "wallust/colors-waybar.css";
 
 * {
-  font-family:"CozetteVector", monospace;
+  font-family:"Nerd Font","CozetteVector";
   font-size: 13px;
   font-weight: bold;
-  min-height: 0;
+  min-height: 10px;
 }
 
 #waybar {
@@ -16,12 +16,13 @@
   border-radius: 0.5rem;
   background-color: @background;
   margin-left: 10px;
+  padding:0;
 }
 
 #workspaces button {
   color: @color5;
   border-radius: 0.5rem;
-  padding: 0rem 0.65rem;
+  padding: 0 0.3rem;
 }
 
 #workspaces button.active {
@@ -85,10 +86,10 @@
 }
 
 #battery.warning:not(.charging) {
-  color: @orange;
+  color: orange;
 }
 #battery.critical:not(.charging) {
-  color: @red;
+  color: red;
 }
 
 #backlight {
@@ -102,10 +103,13 @@
     color : @color4;
 }
 
-#pulseaudio {
+#pulseaudio.output {
   color: @color3;
   border-radius: 0.5rem 0px 0px 0.5rem;
   margin-left: 1rem;
+}
+#pulseaudio.input {
+  color: @color3;
 }
 
 #custom-music {

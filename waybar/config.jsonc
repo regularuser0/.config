@@ -4,17 +4,17 @@
 
     "modules-left": ["hyprland/workspaces","custom/music","custom/wall"],
     "modules-center": ["cpu","memory","disk","temperature"],
-    "modules-right": ["pulseaudio","bluetooth","network","backlight", "battery", "clock","tray"],
+    "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
 
     "hyprland/workspaces": {
      "format": "{icon}",
      "format-icons": {
 		"1": "",
 		"2": "󰈹",
-		"3": "",
-		"4": "",
+		"3": "󰂺",
+		"4": "󱧌",
 		"5": "",
-		"6": "󰲹",
+		"6": "",
 		"active": "",
 		"default": ""
 	},
@@ -26,17 +26,17 @@
 "temperature": {
 	"critical-threshold": 70,
 	"format-critical": "  {temperatureC}°C ",
-	"format": " {temperatureC}°C"
+	"format": "󰔐 {temperatureC}°C"
 },
 "disk": {
 	"interval": 30,
 	"path": "/home",
-	"format": " {percentage_free}% free"
+	"format": " {percentage_free}% free"
 },
 
 "cpu": {
 	"interval": 10,
-	"format": " {}%",
+	"format": "󰻠 {}%",
 	"max-length": 10
 },
 
@@ -68,7 +68,7 @@
     	"exec": "ls -1 ~/images/selected_walls | wc -l", 
     },
     "clock": {
-	"format": "  {:%A | %B %d %Y | %R}",
+	"format": "󰃰 {:%A  %B %d %Y  %R}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
 		"mode"          : "year",
@@ -95,19 +95,33 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-icons": ["♔", "♕", "♖", "♘", "♗", "♙"],
     },
     "battery": {
 	"interval": 10,
 	"states": {
-		"warning": 30,
-		"critical": 15
+		"warning": 25,
+		"critical": 10
 	},
+	"format-warning":"󰂃 {capacity}%",
+	"format-critical":"󰂃 {capacity}%",
 	"format": "{icon} {capacity}%" ,
-	"format-icons": [" ", "", "", "", ""],
+	"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 	"max-length": 25
     },
-    "pulseaudio": {
+    "pulseaudio#input": {
+        "format-source": " {volume}%",
+        "format-source-muted": " off",
+        "format": "{format_source}",
+        "scroll-step": 1,
+        "smooth-scrolling-threshold": 1,
+        "max-volume": 100,
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-middle": "pavucontrol",
+        "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+        "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+    },  
+    "pulseaudio#output": {
          "scroll-step": 5,
         "format": "{icon} {volume}%",
         "format-muted": " ------------- 󰝟 ",
