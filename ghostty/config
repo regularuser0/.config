@@ -5,6 +5,12 @@ gtk-single-instance = true
 window-padding-x = 10
 window-padding-y = 8
 
+confirm-close-surface = false
+
+app-notifications = false
+
+
+
 background-opacity = 0.9
 
 config-file = ~/.config/ghostty/colors-wallust
