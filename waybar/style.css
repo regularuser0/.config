@@ -84,7 +84,7 @@
 
 #clock {
     color: @color7;
-    border-radius: 0px 0.3rem 0.3rem 0px;
+    border-radius: 0px 0.4rem 0.4rem 0px;
     border-right: solid @color2 1px;
     margin-right: 1rem;
 }
@@ -114,7 +114,7 @@
 #pulseaudio.output {
     color: @color3;
     border-left: solid @color2 1px;
-    border-radius: 0.3rem 0px 0px 0.3rem;
+    border-radius: 0.4rem 0px 0px 0.4rem;
     margin-left: 1rem;
 }
 #pulseaudio.input {
@@ -124,32 +124,32 @@
 #custom-music {
     border: solid @color2 1px;
     color: @color3;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
     margin-left: 1rem;
 }
 #custom-wallo{
     border-left: solid @color2 1px;
     color: @color4;
-    border-radius: 0.3rem 0 0 0.3rem;
+    border-radius: 0.4rem 0 0 0.4rem;
     margin-left: 10px;
 }
 
 #custom-wallr{
     border-right: solid @color2 1px;
     color: @color4;
-    border-radius: 0 0.3rem 0.3rem 0;
+    border-radius: 0 0.4rem 0.4rem 0;
 }
 
 #tray {
     border: solid @color2 1px;
     margin-right: 10px;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
 }
 
 #cpu {
     border-left: solid @color2 1px;
     color: @color7;
-    border-radius: 0.3rem 0 0 0.3rem;
+    border-radius: 0.4rem 0 0 0.4rem;
 }
 
 #disk {
@@ -167,5 +167,5 @@
 #temperature {
     border-right: solid @color2 1px;
     color: @color4;
-    border-radius: 0px 0.3rem 0.3rem 0px;
+    border-radius: 0px 0.4rem 0.4rem 0px;
 }
