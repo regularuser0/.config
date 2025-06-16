@@ -1,40 +1,43 @@
 @import "wallust/colors-waybar.css";
 
+
 * {
-  font-family:"Nerd Font","CozetteVector";
-  font-size: 13px;
-  font-weight: bold;
-  min-height: 10px;
+    font-family:"CozetteVector";
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 10px;
 }
 
 #waybar {
-  background-color: transparent;
-  color: @color9;
+
+
+    background-color: transparent;
+    color: @color9;
 }
 
 #workspaces {
-  border-radius: 0.5rem;
-  background-color: @background;
-  margin-left: 10px;
-  padding:0;
+    border: solid @color2 1px;
+    border-radius: 0.3rem;
+    background-color: @background;
+    margin-left: 10px;
+    padding:0;
 }
 
 #workspaces button {
-  color: @color5;
-  border-radius: 0.5rem;
-  padding: 0 0.3rem;
+    color: @color5;
+    padding: 0 0.3rem;
 }
 
 #workspaces button.active {
-  color: @color7;
+    color: @color7;
 }
 
 #workspaces button:hover {
-  box-shadow: none; 
-  text-shadow: none; 
-  background: none; 
-  transition: none; 
-  border: none;
+    box-shadow: none; 
+    text-shadow: none; 
+    background: none; 
+    transition: none; 
+    border: none;
 }
 
 #bluetooth,
@@ -55,6 +58,8 @@
 #custom-lock,
 #custom-power {
     margin-top:4px;
+    border-top: solid @color2 1px;
+    border-bottom: solid @color2 1px;
 }
 
 #custom-wallo,
@@ -73,87 +78,94 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @background;
-  padding: 0.5rem 0.5rem;
+    background-color: @background;
+    padding: 0.5rem 0.5rem;
 }
 
 #clock {
-  color: @color7;
-  border-radius: 0px 0.5rem 0.5rem 0px;
-  margin-right: 1rem;
+    color: @color7;
+    border-radius: 0px 0.3rem 0.3rem 0px;
+    border-right: solid @color2 1px;
+    margin-right: 1rem;
 }
 
 #battery {
-  color: @color6;
+    color: @color6;
 }
 
 #battery.warning:not(.charging) {
-  color: orange;
+    color: orange;
 }
 #battery.critical:not(.charging) {
-  color: red;
+    color: red;
 }
 
 #backlight {
-  color: @color6;
+    color: @color6;
 }
 
 #backlight, #battery {
-  border-radius: 0;
+    border-radius: 0;
 }
 #bluetooth {
     color : @color4;
 }
 
 #pulseaudio.output {
-  color: @color3;
-  border-radius: 0.5rem 0px 0px 0.5rem;
-  margin-left: 1rem;
+    color: @color3;
+    border-left: solid @color2 1px;
+    border-radius: 0.3rem 0px 0px 0.3rem;
+    margin-left: 1rem;
 }
 #pulseaudio.input {
-  color: @color3;
+    color: @color3;
 }
 
 #custom-music {
-  color: @color3;
-  border-radius: 0.5rem;
-  margin-left: 1rem;
+    border: solid @color2 1px;
+    color: @color3;
+    border-radius: 0.3rem;
+    margin-left: 1rem;
 }
 #custom-wallo{
+    border-left: solid @color2 1px;
     color: @color4;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.3rem 0 0 0.3rem;
     margin-left: 10px;
 }
 
 #custom-wallr{
+    border-right: solid @color2 1px;
     color: @color4;
-  border-radius: 0 0.5rem 0.5rem 0;
-
+    border-radius: 0 0.3rem 0.3rem 0;
 }
 
 #tray {
-  margin-right: 10px;
-  border-radius: 0.5rem;
+    border: solid @color2 1px;
+    margin-right: 10px;
+    border-radius: 0.3rem;
 }
 
 #cpu {
-  color: @color7;
-  border-radius: 0.5rem 0 0 0.5rem;
+    border-left: solid @color2 1px;
+    color: @color7;
+    border-radius: 0.3rem 0 0 0.3rem;
 }
 
 #disk {
-  color: @color5;
+    color: @color5;
 }
 
 #memory {
-  color: @color6;
+    color: @color6;
 }
 
 #network {
-   color: @color5;
+    color: @color5;
 }
 
 #temperature {
-  color: @color4;
-  border-radius: 0px 0.5rem 0.5rem 0px;
+    border-right: solid @color2 1px;
+    color: @color4;
+    border-radius: 0px 0.3rem 0.3rem 0px;
 }
