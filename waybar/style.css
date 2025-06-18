@@ -48,8 +48,7 @@
 #disk,
 #memory,
 #custom-music,
-#custom-wallo,
-#custom-wallr,
+#custom-walls,
 #tray,
 #backlight,
 #clock,
@@ -62,8 +61,7 @@
     border-bottom: solid @color2 1px;
 }
 
-#custom-wallo,
-#custom-wallr,
+#custom-walls,
 #bluetooth,
 #custom-music,
 #cpu,
@@ -127,31 +125,22 @@
     border-radius: 0.4rem;
     margin-left: 1rem;
 }
-#custom-wallo{
-    border-left: solid @color2 1px;
+#custom-walls{
+    border: solid @color2 1px;
     color: @color4;
     border-radius: 0.4rem 0 0 0.4rem;
     margin-left: 10px;
 }
-
-#custom-wallr{
-    border-right: solid @color2 1px;
-    color: @color4;
-    border-radius: 0 0.4rem 0.4rem 0;
-}
-
 #tray {
     border: solid @color2 1px;
     margin-right: 10px;
     border-radius: 0.4rem;
 }
-
 #cpu {
     border-left: solid @color2 1px;
     color: @color7;
     border-radius: 0.4rem 0 0 0.4rem;
 }
-
 #disk {
     color: @color5;
 }

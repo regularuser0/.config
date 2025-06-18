@@ -1,6 +1,7 @@
 font-family = CozetteVector
 
-gtk-single-instance = true
+# causes problems with wallust
+# gtk-single-instance = true 
 
 window-padding-x = 10
 window-padding-y = 7

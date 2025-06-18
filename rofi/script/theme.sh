@@ -1,10 +1,11 @@
 #!/bin/sh
 
-FILE=$(ls ~/sav/output_wall | rofi -dmenu -theme .config/rofi/stylewall.rasi)
+NAME=$(ls ~/images/selected_walls/ | cut -d. -f1 | rofi -dmenu -theme .config/rofi/stylewall.rasi)
+extension=$(find ~/images/selected_walls/ -name "$NAME*" | cut -d. -f2-)
 
-if [ -n "$FILE" ]; then
+if [ -n "$NAME" ]; then
 
-    wallpaper_path=~/sav/output_wall/$FILE
+    wallpaper_path=~/images/selected_walls/$NAME.$extension
 
     rm /home/user/.config/script/theme/*
 

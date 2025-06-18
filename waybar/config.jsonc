@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top",
 
-    "modules-left": ["hyprland/workspaces","custom/music","custom/wallo","custom/wallr"],
+    "modules-left": ["hyprland/workspaces","custom/music","custom/walls"],
     "modules-center": ["cpu","memory","disk","temperature"],
     "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
 
@@ -59,21 +59,13 @@
         "on-click": "playerctl play-pause & mpc toggle",
         "max-length": 50
     },
-    "custom/wallo": {
-    "format": "  {} done  BUT",
+    "custom/walls": {
+    "format": "  {} wallpapers",
         "escape": true,
     	"interval": 100,
         "tooltip": false,
 	"on-click": "~/.config/script/theme.sh",		
-    	"exec": "ls -1 ~/sav/output_wall/ | wc -l", 
-    },
-  "custom/wallr": {
-    "format": "{} todo",
-        "escape": true,
-    	"interval": 100,
-        "tooltip": false,
-	"on-click": "~/.config/script/theme.sh",		
-    	"exec": "ls -1 ~/sav/renamed_walls/ | wc -l", 
+    	"exec": "ls -1 ~/images/selected_walls/ | wc -l", 
     },
     "clock": {
 	"format": "󰃰 {:%A  %B %d %Y  %R}",
