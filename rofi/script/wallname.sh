@@ -13,8 +13,11 @@ if [ -n "$NewName" ]; then
     
     if [ "$NewName" == "/rm" ]; then
 	mv $wall_path /home/user/Trash/
+	echo "removed" > /home/user/.config/script/theme/last_wallpaper_path
+	~/.config/script/theme.sh 
     else
 	mv $wall_path /home/user/images/selected_walls/$NewName.$Extension
+	echo "/home/user/images/selected_walls/$NewName.$Extension" > /home/user/.config/script/theme/last_wallpaper_path
     fi
 
 fi
