@@ -4,7 +4,7 @@
     src: url("assets/CozetteVector.ttf") format('truetype');
 }
 body{
-    font-family: Cozette;
+    font-family: Hack Nerd Font;
     background: url(../script/theme/current.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,13 +36,13 @@ body{
 h1{
     color: var(--color4);
     margin: 10px 2px 29px 2px;
-    font-size: 25px;
+    font-size: 23px;
 }
 a{
     margin: 5px 20px;
     text-decoration: none;
     color: var(--color5);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h2{
