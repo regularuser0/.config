@@ -12,7 +12,8 @@ if [ -n "$NAME" ]; then
     echo $wallpaper_path > /home/user/.config/script/theme/last_wallpaper_path
 
     magick $wallpaper_path -define jpg:extent=1MB /home/user/.config/script/theme/current.jpg
-
+    mv /home/user/.config/script/theme/current-0.jpg /home/user/.config/script/theme/current.jpg 
+    
     swww img --transition-type wave "$wallpaper_path"
 
     wallust run "$wallpaper_path"
