@@ -49,6 +49,7 @@
 #memory,
 #custom-music,
 #custom-walls,
+#custom-klayout,
 #tray,
 #backlight,
 #clock,
@@ -60,7 +61,7 @@
     border-top: solid @color3 1px;
     border-bottom: solid @color3 1px;
 }
-
+#custom-klayout,
 #custom-walls,
 #bluetooth,
 #custom-music,
@@ -125,11 +126,17 @@
     border-radius: 0.4rem;
     margin-left: 1rem;
 }
+#custom-klayout{
+    border: solid @color3 1px;
+    color: @color2;
+    border-radius: 0.4rem;
+    margin-left: 1rem;    
+}
 #custom-walls{
     border: solid @color3 1px;
     color: @color4;
-    border-radius: 0.4rem 0 0 0.4rem;
-    margin-left: 10px;
+    border-radius: 0.4rem;
+    margin-left: 1rem;
 }
 #tray {
     border: solid @color3 1px;

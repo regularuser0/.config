@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top",
 
-    "modules-left": ["hyprland/workspaces","custom/music","custom/walls"],
+    "modules-left": ["hyprland/workspaces","custom/music","custom/walls","custom/klayout"],
     "modules-center": ["cpu","memory","disk","temperature"],
     "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
 
@@ -66,6 +66,14 @@
         "tooltip": false,
 	"on-click": "~/.config/script/theme.sh",		
     	"exec": "ls -1 ~/images/unamed/ | wc -l", 
+    },
+  "custom/klayout": {
+    "format": " {}",
+        "escape": true,
+    	"interval": 1,
+        "tooltip": false,
+	"on-click": "~/.config/script/klayout.sh",		
+    	"exec": "cat ~/.config/script/currentlayout", 
     },
     "clock": {
 	"format": "󰃰 {:%A  %B %d %Y  %R}",
