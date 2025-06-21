@@ -2,7 +2,7 @@
 
 rm /home/user/.config/script/theme/*
 
-wallpaper_path="$(find ~/images/selected_walls/ -type f | shuf -n 1)"
+wallpaper_path="$(find ~/images/unamed/ -type f | shuf -n 1)"
 #wallpaper_path="/home/user/images/p0.png"
 
 echo $wallpaper_path > /home/user/.config/script/theme/last_wallpaper_path
