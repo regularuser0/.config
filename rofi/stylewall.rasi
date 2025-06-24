@@ -1,6 +1,6 @@
 configuration {
 	modi:                       "drun";
-    show-icons:                 false;
+    show-icons:                 true;
 }
 
 @import "theme"
@@ -12,8 +12,8 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       900px;
-    height:			 68%;
+    width:                       1200px;
+    height:			 88%;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -42,14 +42,12 @@ imagebox {
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     20px;
+    spacing:                     10px;
+    padding:                     5px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
 }
-
-
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
@@ -81,27 +79,29 @@ entry {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1;
+    columns:                     4;
     lines:                       3;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                true;
     fixed-columns:               true;
+    fixed-height:                true;
     
-    spacing:                     10px;
+    spacing:                     20px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
 }
 
+
 /*****----- Elements -----*****/
 element {
+    orientation:		 vertical;
+    padding:                     3px;
     enabled:                     true;
-    spacing:                     15px;
-    padding:                     8px;
+    spacing:                     10px;
     border-radius:               10px;
     background-color:            transparent;
     text-color:                  @foreground;
@@ -134,15 +134,20 @@ element selected.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        100px;
+    max-height:			 10px;
     cursor:                      inherit;
+    padding: 			 0;
 }
 element-text {
+    enabled:			true;
+
+    padding:			 0;
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.0;
+    horizontal-align:            0.5;
 }
 
 /*****----- Message -----*****/
@@ -150,7 +155,7 @@ message {
     background-color:            transparent;
 }
 textbox {
-    padding:                     15px;
+    padding:                     16px;
     border-radius:               10px;
     background-color:            @background-alt;
     text-color:                  @foreground;

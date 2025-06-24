@@ -14,7 +14,11 @@ if [ -n "$NewName" ]; then
     if [ "$NewName" == "/rm" ]; then
 	mv $wall_path /home/user/Trash/
 	echo "removed" > /home/user/.config/script/theme/last_wallpaper_path
-	~/.config/script/theme.sh 
+	~/.config/script/theme.sh
+    elif [ "$Extension" == "webp" ]; then
+	magick $wall_path /home/user/images/selected_walls/$NewName.png
+	rm $wall_path
+	echo "/home/user/images/selected_walls/$NewName.png" > /home/user/.config/script/theme/last_wallpaper_path
     else
 	mv $wall_path /home/user/images/selected_walls/$NewName.$Extension
 	echo "/home/user/images/selected_walls/$NewName.$Extension" > /home/user/.config/script/theme/last_wallpaper_path
