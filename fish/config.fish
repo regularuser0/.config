@@ -9,7 +9,6 @@ alias p="sudo pacman"
 alias ls="exa --icons"
 alias tree="exa --icons -T"
 
-
 set -gx EDITOR emacs
 
 starship init fish | source

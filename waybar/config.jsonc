@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top",
 
-    "modules-left": ["hyprland/workspaces","custom/music","custom/walls","custom/klayout"],
+    "modules-left": ["hyprland/workspaces","custom/walls","custom/klayout","custom/hypridle","custom/music"],
     "modules-center": ["cpu","memory","disk","temperature"],
     "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
 
@@ -50,6 +50,13 @@
         "icon-size": 14,
         "spacing": 10
 },
+    "custom/hypridle": {
+        "format": " {}",
+        "interval": 1,
+        "tooltip": false,
+        "exec": "cat .config/script/idlestate", 
+        "on-click": ".config/script/tidle.sh",
+    },
     "custom/music": {
         "format": "  {}",
         "escape": true,
@@ -68,7 +75,7 @@
     	"exec": "ls -1 ~/images/unamed/ | wc -l", 
     },
   "custom/klayout": {
-    "format": " {}",
+    "format": "󰌓 {}",
         "escape": true,
     	"interval": 1,
         "tooltip": false,
