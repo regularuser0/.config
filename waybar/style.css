@@ -11,14 +11,14 @@
 }
 #workspaces {
     border: solid @color3 1px;
-    border-radius: 0.3rem;
+
     background-color: @background;
     margin-left: 10px;
-    padding:0;
+    padding:0 0.7rem;
 }
 #workspaces button {
     color: @color5;
-    padding: 0 0.3rem;
+    padding: 0 0.2rem;
 }
 #workspaces button.active {
     color: @color7;
@@ -68,12 +68,12 @@
 #custom-hypridle,
 #custom-power {
     background-color: @background;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.6rem;
 }
 
 #clock {
     color: @color7;
-    border-radius: 0px 0.4rem 0.4rem 0px;
+    border-radius: 0px 0 1.2rem 0px;
     border-right: solid @color3 1px;
     margin-right: 1rem;
 }
@@ -103,46 +103,52 @@
 #pulseaudio.output {
     color: @color3;
     border-left: solid @color3 1px;
-    border-radius: 0.4rem 0px 0px 0.4rem;
+    border-radius: 1.2em 0px 0px 0rem;
     margin-left: 1rem;
 }
 #pulseaudio.input {
     color: @color3;
 }
 
+#custom-music,
+#workspaces,
+#custom-walls,
+#custom-hypridle,
+#custom-klayout{
+    border-radius: 0 1.2rem 0 1.2rem;
+
+}
+
 #custom-music {
     border: solid @color3 1px;
     color: @color3;
-    border-radius: 0.4rem;
     margin-left: 1rem;
 }
 #custom-klayout{
     border: solid @color3 1px;
     color: @color2;
-    border-radius: 0.4rem;
     margin-left: 1rem;    
 }
 #custom-walls{
     border: solid @color3 1px;
     color: @color4;
-    border-radius: 0.4rem;
     margin-left: 1rem;
 }
 #custom-hypridle{
     border: solid @color3 1px;
     color: @color5;
-    border-radius: 0.4rem;
     margin-left: 1rem;
 }
 #tray {
     border: solid @color3 1px;
     margin-right: 10px;
-    border-radius: 0.4rem;
+    border-radius: 1.2rem 0 1.2rem 0;
 }
 #cpu {
     border-left: solid @color3 1px;
     color: @color7;
-    border-radius: 0.4rem 0 0 0.4rem;
+    padding-left: 8px;
+    border-radius: 0rem 0 0 1.2rem;
 }
 #disk {
     color: @color5;
@@ -158,5 +164,6 @@
 #temperature {
     border-right: solid @color3 1px;
     color: @color4;
-    border-radius: 0px 0.4rem 0.4rem 0px;
+    padding-right: 8px;
+    border-radius: 0px 0 1.2rem 0px;
 }
