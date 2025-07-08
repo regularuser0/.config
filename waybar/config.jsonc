@@ -1,5 +1,6 @@
 {
-    "layer": "top", 
+    "layer": "top",
+    "output": ["eDP-1"],
     "position": "top",
 
     "modules-left": ["hyprland/workspaces","custom/walls","custom/klayout","custom/hypridle","custom/music"],
