@@ -1,8 +1,8 @@
 
 * Hydeal
-#+begin_verse
+#+begin_quote
 Work in progress… still messy but fine it's working !
-#+end_verse
+#+end_quote
 
 ** I am currently renaming my wall from my wallpaper repo
 #+begin_quote
