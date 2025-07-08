@@ -1,0 +1,23 @@
+
+* Hydeal
+> A little bit messy !
+
+** I am currently renaming my wall from my wallpaper repo
+> [[https://github.com/regularuser0/images][Check this]]
+
+** For my emacs config
+> [[https://github.com/regularuser0/.emacs.d][Check this]]
+
+** TODO Programs that I use
+- hyprland
+- wallust
+- waybar
+- swww
+- vesktop
+- firefox
+- emacs
+- steam
+- anki
+- libreoffice
+- fish
+- …
