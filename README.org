@@ -1,12 +1,18 @@
 
 * Hydeal
-> A little bit messy !
+#+begin_verse
+Work in progress… still messy but fine it's working !
+#+end_verse
 
 ** I am currently renaming my wall from my wallpaper repo
-> [[https://github.com/regularuser0/images][Check this]]
+#+begin_quote
+[[https://github.com/regularuser0/images][Check this]]
+#+end_quote
 
 ** For my emacs config
-> [[https://github.com/regularuser0/.emacs.d][Check this]]
+#+begin_quote
+[[https://github.com/regularuser0/.emacs.d][Check this]]
+#+end_quote
 
 ** TODO Programs that I use
 #+begin_quote
