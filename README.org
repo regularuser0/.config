@@ -3,6 +3,7 @@
 #+begin_quote
 Work in progress… still messy but fine it's working !
 #+end_quote
+Before using this config, see script/theme.sh to create the file with all the colors for each programs.
 
 ** I am currently renaming my wall from my wallpaper repo
 #+begin_quote
