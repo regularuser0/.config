@@ -9,7 +9,15 @@
 > [[https://github.com/regularuser0/.emacs.d][Check this]]
 
 ** TODO Programs that I use
+#+begin_quote
+I will write will them all but for now…
+#+end_quote
 - hyprland
+- aspell
+- texlive
+- bluetui
+- cups
+- brightnessctl
 - wallust
 - waybar
 - swww
