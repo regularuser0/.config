@@ -19,6 +19,9 @@
     color: @color5;
     padding: 0 0.2rem;
 }
+#workspaces button.empty {
+    color: @color1;
+}
 #workspaces button.active {
     color: @color7;
 }
