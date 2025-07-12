@@ -3,9 +3,9 @@
 #+begin_quote
 Work in progress… still messy but fine it's working !
 #+end_quote
-Before using this config, see script/theme.sh to create the file with all the colors for each programs.
+Before using this config, see script/theme.sh to create the file with all the colors for each programs or it will not work out of the box. This files aren't stored on git since they change very often with the wallpaper update (see ~change_theme.service~).
 
-** I am currently renaming my wall from my wallpaper repo
+** I am currently renaming my wallpapers from my repo
 #+begin_quote
 [[https://github.com/regularuser0/images][Check this]]
 #+end_quote
