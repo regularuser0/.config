@@ -17,7 +17,7 @@ Before using this config, see script/theme.sh to create the file with all the co
 
 ** TODO Programs that I use
 #+begin_quote
-I will write will them all but for now…
+I will write them all but for now…
 #+end_quote
 - hyprland
 - aspell
