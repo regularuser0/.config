@@ -24,6 +24,7 @@ set inputbar-bg 		          rgba(49,50,68,1)
 set recolor                   "true"
 set recolor-lightcolor		    rgba(30,30,46,1)
 set recolor-darkcolor		      rgba(205,214,244,1)
+map <F5> recolor
 
 set index-fg			            rgba(205,214,244,1)
 set index-bg			            rgba(30,30,46,1)
@@ -38,6 +39,7 @@ set highlight-fg              rgba(245,194,231,0.5)
 set highlight-active-color	  rgba(245,194,231,0.5)
 
 
+
 ### EMACS
 # Put the following inside `$XDG_CONFIG_HOME/zathura/zathurarc
 
@@ -45,6 +47,8 @@ set highlight-active-color	  rgba(245,194,231,0.5)
 # when selecting text with mouse,
 # copy to clipboard
 set selection-clipboard clipboard
+
+map <C-t> exec /home/user/.config/script/translate.sh
 
 # keep several lines of text when
 # scrolling a screenful
