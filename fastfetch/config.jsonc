@@ -1,9 +1,9 @@
 {
 "logo": {
-    "source": "~/.config/fastfetch/alolo.png",
+    "source": "~/.config/fastfetch/anatomy.png",
     "type": "auto",
     "height": 20,
-    "width": 31,
+    "width": 24,
     "padding": {
       "top": 0,
       "left": 2,
