@@ -48,8 +48,6 @@ set highlight-active-color	  rgba(245,194,231,0.5)
 # copy to clipboard
 set selection-clipboard clipboard
 
-map <C-t> exec /home/user/.config/script/translate.sh
-
 # keep several lines of text when
 # scrolling a screenful
 set scroll-full-overlap 0.2
