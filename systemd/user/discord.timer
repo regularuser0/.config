@@ -1,0 +1,9 @@
+[Unit]
+Description=Update discord rich presence
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=1s
+
+[Install]
+WantedBy=timers.target

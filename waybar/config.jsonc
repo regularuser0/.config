@@ -3,7 +3,7 @@
     "output": ["eDP-1"],
     "position": "top",
 
-    "modules-left": ["hyprland/workspaces","custom/walls","custom/klayout","custom/hypridle","custom/music"],
+    "modules-left": ["hyprland/workspaces","custom/walls","custom/klayout","custom/hypridle","custom/presence","custom/music"],
     "modules-center": ["cpu","memory","disk","temperature"],
     "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
 
@@ -57,6 +57,13 @@
         "tooltip": false,
         "exec": "cat .config/script/idlestate", 
         "on-click": ".config/script/tidle.sh",
+    },
+  "custom/presence": {
+        "format": "  {}",
+        "interval": 300,
+        "tooltip": false,
+        "exec": "cat .config/script/presence-state", 
+        "on-click": ".config/script/discordpresence.sh",
     },
     "custom/music": {
         "format": "  {}",

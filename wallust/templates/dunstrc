@@ -1,7 +1,8 @@
 [global]
-    frame_width = 2
+    frame_width = 3
     separator_color= frame
 
+    font = CozetteVector 10
     layer = top
     
     corner_radius = 2
