@@ -12,7 +12,7 @@ fi
 if [ -z "$name" ] && command -v mpc >/dev/null 2>&1; then
   name="$(mpc current 2>/dev/null | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
 fi
-[ -n "$name" ] || name="something"
+[ -n "$name" ] || name="nothing T-T"
 
 # --- lire l'ancien titre ---
 oldname=""

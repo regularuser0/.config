@@ -3,7 +3,7 @@ Description=Update discord rich presence
 
 [Timer]
 OnBootSec=30s
-OnUnitActiveSec=1s
+OnUnitActiveSec=5s
 
 [Install]
 WantedBy=timers.target

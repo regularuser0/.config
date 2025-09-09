@@ -12,7 +12,7 @@ Name=Openfront
 # The path to the folder in which the executable is run
 
 # The executable of the application, possibly with arguments.
-Exec=firefox https://openfront.io
+Exec=brave --app=https://openfront.io
 
 # The name of the icon that will be used to display this entry
 Icon=/home/user/images/icons/zephyr.png

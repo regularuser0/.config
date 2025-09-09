@@ -42,8 +42,8 @@ imagebox {
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     20px;
+    spacing:                     18px;
+    padding:                     15px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];

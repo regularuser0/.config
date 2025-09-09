@@ -49,6 +49,8 @@ kde.org/
 kdeglobals
 kdenlive-layoutsrc
 kdenliverc
+kwalletrc
+
 libreoffice/
 mimeapps.list
 mpv/
@@ -65,3 +67,5 @@ user-dirs.locale
 vesktop/
 vlc/
 xsettingsd/
+
+linux-discord-rich-presencerc
