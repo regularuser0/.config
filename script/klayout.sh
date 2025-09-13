@@ -15,10 +15,6 @@ input {
     }
 }
 
-gestures {
-    workspace_swipe = true
-}
-
 device {
     name = 
     sensitivity = 0.9
@@ -40,10 +36,6 @@ input {
     }
 }
 
-gestures {
-    workspace_swipe = true
-}
-
 device {
     name = 
     sensitivity = 0.9
@@ -63,10 +55,6 @@ input {
     touchpad {
         natural_scroll = false
     }
-}
-
-gestures {
-    workspace_swipe = true
 }
 
 device {
