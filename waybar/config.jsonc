@@ -75,12 +75,12 @@
         "max-length": 47
     },
     "custom/walls": {
-    "format": "󰹑  {} to name",
+    "format": "󰹑  {}",
         "escape": true,
     	"interval": 100,
         "tooltip": false,
 	"on-click": "~/.config/script/theme.sh",		
-    	"exec": "ls -1 ~/images/unamed/ | wc -l", 
+	"exec": "echo \"$(ls -1 ~/images/unamed/ | wc -l) -> $(ls -1 ~/images/selected_walls | wc -l)\""
     },
   "custom/klayout": {
     "format": "󰌓 {}",
