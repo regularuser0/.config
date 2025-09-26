@@ -34,9 +34,8 @@ kew
 kitty/wallust/colors-kitty.conf
 kwalletrc
 libreoffice/
-linux-discord-rich-presencerc
+
 mimeapps.list
-mpd/database
 mpv/
 nwg-look/
 obs-studio/
@@ -60,3 +59,7 @@ vesktop/
 vlc/
 waybar/wallust/colors-waybar.css
 xsettingsd/
+
+linux-discord-rich-presencerc
+mpd/database
+script/currentsong
