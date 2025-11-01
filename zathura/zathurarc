@@ -61,7 +61,7 @@ set vertical-center true
 set synctex true
 # large bold font easier on the eyes in index mode
 # status bar can be disabled with A-s
-set font "FreeSans bold 16"
+set font "Cozette Vector 20"
 set zoom-step 3
 
 map [normal] <C-b> scroll left

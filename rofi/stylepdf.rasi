@@ -36,7 +36,7 @@ mainbox {
 imagebox {
     padding:                     200px 15px 0px 15px;
     background-color:            transparent;
-    background-image:            url("~/.config/script/theme/current.jpg", height);
+    background-image:            url("~/.config/script/theme/current.jpg", width);
     orientation:                 vertical;
     children:                    [ "inputbar" ];
 }
