@@ -42,7 +42,6 @@
 #custom-music,
 #custom-walls,
 #custom-klayout,
-#custom-presence,
 #tray,
 #backlight,
 #clock,
@@ -55,7 +54,6 @@
     border-bottom: solid @color3 1px;
 }
 #custom-klayout,
-#custom-presence,
 #custom-walls,
 #bluetooth,
 #custom-music,
@@ -118,8 +116,7 @@
 #workspaces,
 #custom-walls,
 #custom-hypridle,
-#custom-klayout,
-#custom-presence
+#custom-klayout
 {
     border-radius: 0 1.2rem 0 1.2rem;
 }
@@ -129,8 +126,7 @@
     color: @color3;
     margin-left: 1rem;
 }
-#custom-klayout,
-#custom-presence
+#custom-klayout
 {
     border: solid @color3 1px;
     color: @color2;

@@ -1,6 +1,0 @@
-[Unit]
-Description= update discord rich presence
-    
-[Service]
-Type=oneshot
-ExecStart=/home/user/.config/script/discordpresenceupdate.sh

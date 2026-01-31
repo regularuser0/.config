@@ -58,13 +58,6 @@
         "exec": "cat .config/script/idlestate", 
         "on-click": ".config/script/tidle.sh",
     },
-  "custom/presence": {
-        "format": "  {}",
-        "interval": 300,
-        "tooltip": false,
-        "exec": "cat .config/script/presence-state", 
-        "on-click": ".config/script/discordpresence.sh",
-    },
     "custom/music": {
         "format": "  {}",
         "escape": true,
@@ -166,7 +159,7 @@
 	    "▉▉▉▉▉▉▉▉▉▉▉▉▉"
 	    ],
         },
-        "on-click": "pavucontrol"
+        "on-click": "ghostty -e wiremix"
     },
     "bluetooth": {
     	"on-click": "~/.config/script/bluetooth.sh",
