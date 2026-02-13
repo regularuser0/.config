@@ -3,7 +3,7 @@ Description= changes theme
     
 [Service]
 Type=oneshot
-ExecStart=hyprland
+ExecStart=start-hyprland
 
 [Install]
 WantedBy=default.target
