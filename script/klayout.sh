@@ -16,8 +16,9 @@ input {
 }
 
 device {
-    name = 
-    sensitivity = 0.9
+    name = onlee-bt-mouse
+    sensitivity = -0.91
+    accel_profile = 
 }"
 
 fr="
@@ -37,8 +38,9 @@ input {
 }
 
 device {
-    name = 
-    sensitivity = 0.9
+    name = onlee-bt-mouse
+    sensitivity = -0.91
+    accel_profile = 
 }"
 
 us="
@@ -56,11 +58,13 @@ input {
         natural_scroll = false
     }
 }
-
 device {
-    name = 
-    sensitivity = 0.9
-}"
+    name = onlee-bt-mouse
+    sensitivity = -0.91
+    accel_profile = 
+}
+
+"
 
 currentlayout=$(cat /home/user/.config/script/currentlayout)
 
