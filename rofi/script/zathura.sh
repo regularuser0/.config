@@ -5,3 +5,5 @@ find ~/Documents ~/Downloads -type f -iname "*.pdf" \
   | sort \
   | rofi -dmenu -no-show-icons -matching fuzzy -theme ~/.config/rofi/stylepdf.rasi \
   | xargs -r zathura
+
+exec ~/.config/script/rename_space.sh 
