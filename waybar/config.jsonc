@@ -1,0 +1,188 @@
+{
+    "layer": "top",
+    "output": ["*"],
+    "position": "top",
+
+    "modules-left": ["hyprland/workspaces","custom/walls","custom/klayout","custom/hypridle","custom/presence","custom/music"],
+    "modules-center": ["cpu","memory","disk","temperature"],
+    "modules-right": ["pulseaudio#output","pulseaudio#input","bluetooth","network","backlight", "battery", "clock","tray"],
+
+    "hyprland/workspaces": {
+     "format": "{icon}",
+     "format-icons": {
+		"1": "",
+		"2": "󰈹",
+		"3": "󰂺",
+		"4": "󱧌",
+		"5": "",
+		"6": "",
+		"active": "",
+		"default": ""
+	},
+     "persistent-workspaces": {
+	"*": [1,2,3,4,5,6]
+         }
+    },
+
+"temperature": {
+	"critical-threshold": 70,
+	"format-critical": "  {temperatureC}°C ",
+	"format": "󰔐 {temperatureC}°C"
+},
+"disk": {
+	"interval": 60,
+	"path": "/home",
+	"format": "󰋊 {percentage_free}% free"
+},
+
+"cpu": {
+	"interval": 10,
+	"format": "󰍛 {}%",
+	"max-length": 10
+},
+
+"memory": {
+	"interval": 20,
+	"format": " {}%",
+	"max-length": 10
+},
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10
+},
+    "custom/hypridle": {
+        "format": " {}",
+        "interval": 300,
+        "tooltip": false,
+        "exec": "cat .config/script/idlestate", 
+        "on-click": ".config/script/tidle.sh",
+    },
+    "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}' & mpc current", 
+        "on-click": "playerctl play-pause & mpc toggle",
+        "max-length": 47
+    },
+    "custom/walls": {
+    "format": "󰹑  {}",
+        "escape": true,
+    	"interval": 100,
+        "tooltip": false,
+	"on-click": "~/.config/script/theme.sh",		
+	"exec": "echo \"$(ls -1 ~/images/unamed/ | wc -l) -> $(ls -1 ~/images/selected_walls | wc -l)\""
+    },
+  "custom/klayout": {
+    "format": "󰌓 {}",
+        "escape": true,
+    	"interval": 300,
+        "tooltip": false,
+	"on-click": "~/.config/script/klayout.sh",		
+    	"exec": "cat ~/.config/script/currentlayout", 
+    },
+    "clock": {
+	"format": "󰃰 {:%A  %B %d  %R}",
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+	"calendar": {
+		"mode"          : "year",
+		"mode-mon-col"  : 3,
+		"weeks-pos"     : "right",
+		"on-scroll"     : 1,
+		"on-click-right": "mode",
+		"format": {
+			"months":     "<span color='#ffead3'><b>{}</b></span>",
+			"days":       "<span color='#ecc6d9'><b>{}</b></span>",
+			"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+			"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+			"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+		}
+	},
+	"actions": {
+		"on-click-right": "mode",
+		"on-click-forward": "tz_up",
+		"on-click-backward": "tz_down",
+		"on-scroll-up": "shift_up",
+		"on-scroll-down": "shift_down"
+	}
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": ["♔", "♕", "♖","♗", "♘",  "♙"],
+    },
+    "battery": {
+	"interval": 10,
+	"states": {
+		"warning": 25,
+		"critical": 10
+	},
+	"format-warning":"󰂃 {capacity}%",
+	"format-critical":"󰂃 {capacity}%",
+	"format": "{icon} {capacity}%" ,
+	"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+	"max-length": 25
+    },
+    "pulseaudio#input": {
+        "format-source": " {volume}%",
+        "format-source-muted": " off",
+        "format": "{format_source}",
+        "scroll-step": 1,
+        "smooth-scrolling-threshold": 1,
+        "max-volume": 100,
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-middle": "pavucontrol",
+        "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+        "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+    },  
+    "pulseaudio#output": {
+         "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": " ------------- 󰝟 ",
+	"format-icons": {
+	    "default":[
+	    "│││││││││││││ ",
+	    "▉││││││││││││",
+	    "▉▉│││││││││││",
+	    "▉▉▉││││││││││",	    
+    	    "▉▉▉▉│││││││││",
+            "▉▉▉▉▉││││││││",
+    	    "▉▉▉▉▉▉│││││││",
+    	    "▉▉▉▉▉▉▉││││││",
+   	    "▉▉▉▉▉▉▉▉│││││",
+    	    "▉▉▉▉▉▉▉▉▉││││",
+    	    "▉▉▉▉▉▉▉▉▉▉│││",
+    	    "▉▉▉▉▉▉▉▉▉▉▉││",
+	    "▉▉▉▉▉▉▉▉▉▉▉▉│",
+	    "▉▉▉▉▉▉▉▉▉▉▉▉▉"
+	    ],
+        },
+        "on-click": "ghostty -e wiremix"
+    },
+    "bluetooth": {
+    	"on-click": "~/.config/script/bluetooth.sh",
+	"format": " {status}", 
+	"format-disabled": "󰂲", 
+	"format-connected": " {num_connections}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%", //need experimental in bluetooth service (see wiki)
+	"format-not-connected": "󰂱 {status}",
+	"tooltip-format": "{controller_alias}",
+	"tooltip-format-connected": "{controller_alias}\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}"
+	},
+
+    "network": {
+	"interface": "wlp0s20f3",
+	"format": "{ifname}",
+	"format-wifi": " {essid} ({signalStrength}%)",
+	"format-ethernet": " {ifname",
+	"format-disconnected": "",
+	"tooltip-format": "{ifnam}",
+	"tooltip-format-wifi": " {essid} ({signalStrength}%)",
+	"tooltip-format-ethernet": " {ifname}",
+	"tooltip-format-disconnected ": "Disconnected",
+	"max-length": 50,
+	}
+}

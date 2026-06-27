@@ -1,0 +1,6 @@
+[Unit]
+Description= changes theme
+    
+[Service]
+Type=oneshot
+ExecStart=/home/user/.config/script/theme.sh

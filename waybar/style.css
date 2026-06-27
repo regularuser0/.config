@@ -1,0 +1,172 @@
+@import "wallust/colors-waybar.css";
+* {
+    font-family:"CozetteVector";
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 10px;
+}
+#waybar {
+    background-color: transparent;
+    color: @color9;
+}
+#workspaces {
+    border: solid @color3 1px;
+    background-color: @background;
+    margin-left: 10px;
+    padding:0 0.7rem;
+}
+#workspaces button {
+    color: @color5;
+    padding: 0 0.2rem;
+}
+#workspaces button.empty {
+    color: @color1;
+}
+#workspaces button.active {
+    color: @color7;
+}
+#workspaces button:hover {
+    box-shadow: none; 
+    text-shadow: none; 
+    background: none; 
+    transition: none; 
+    border: none;
+}
+#bluetooth,
+#temperature,
+#network,
+#workspaces,
+#cpu,
+#disk,
+#memory,
+#custom-music,
+#custom-walls,
+#custom-klayout,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-hypridle,
+#custom-power {
+    margin-top:4px;
+    border-top: solid @color3 1px;
+    border-bottom: solid @color3 1px;
+}
+#custom-klayout,
+#custom-walls,
+#bluetooth,
+#custom-music,
+#cpu,
+#disk,
+#network,
+#tray,
+#backlight,
+#temperature,
+#clock,
+#memory,
+#battery,
+#pulseaudio,
+#custom-hypridle,
+#custom-power {
+    background-color: @background;
+    padding: 0.5rem 0.6rem;
+}
+
+#clock {
+    color: @color7;
+    border-radius: 0px 0 1.2rem 0px;
+    border-right: solid @color3 1px;
+    margin-right: 1rem;
+}
+
+#battery {
+    color: @color6;
+}
+
+#battery.warning:not(.charging) {
+    color: orange;
+}
+#battery.critical:not(.charging) {
+    color: red;
+}
+
+#backlight {
+    color: @color6;
+}
+
+#backlight, #battery {
+    border-radius: 0;
+}
+#bluetooth {
+    color : @color4;
+}
+
+#pulseaudio.output {
+    color: @color3;
+    border-left: solid @color3 1px;
+    border-radius: 1.2em 0px 0px 0rem;
+    margin-left: 1rem;
+}
+#pulseaudio.input {
+    color: @color3;
+}
+
+#custom-music,
+#workspaces,
+#custom-walls,
+#custom-hypridle,
+#custom-klayout
+{
+    border-radius: 0 1.2rem 0 1.2rem;
+}
+
+#custom-music {
+    border: solid @color3 1px;
+    color: @color3;
+    margin-left: 1rem;
+}
+#custom-klayout
+{
+    border: solid @color3 1px;
+    color: @color2;
+    margin-left: 1rem;    
+}
+#custom-walls{
+    border: solid @color3 1px;
+    color: @color4;
+    margin-left: 1rem;
+}
+#custom-hypridle{
+    border: solid @color3 1px;
+    color: @color5;
+    margin-left: 1rem;
+}
+#tray {
+    border: solid @color3 1px;
+    margin-right: 10px;
+    border-radius: 1.2rem 0 1.2rem 0;
+}
+#cpu {
+    border-left: solid @color3 1px;
+    color: @color7;
+    padding-left: 8px;
+    border-radius: 0rem 0 0 1.2rem;
+}
+#disk {
+    color: @color5;
+}
+#memory {
+    color: @color6;
+}
+
+#network {
+    color: @color5;
+}
+
+#temperature {
+    border-right: solid @color3 1px;
+    color: @color4;
+    padding-right: 8px;
+    border-radius: 0px 0 1.2rem 0px;
+}
